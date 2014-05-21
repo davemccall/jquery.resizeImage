@@ -1,0 +1,7 @@
+resizeImage
+
+Proportionately resizes an image to max height and/or max width.
+
+Documentation and licence in js header.
+
+sample.htm will show usage.

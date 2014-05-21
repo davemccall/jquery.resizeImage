@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" href="sample.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.imagesLoaded.js"></script>
+	<script src="jquery.resizeImage.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#resize").click(function () {
+				console.log($("#maxHeight").val());
+				$("#theImage").resizeImage({ maxHeight: $("#maxHeight").val(), maxWidth: $("#maxWidth").val() });
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<img alt="" id="theImage" src="http://test.iministries.org/Content/3/PhotoGalleries/13727/64553-large.jpg?0812050334" />
+		</div>
+		<div>
+			Max Height &#8211; <input id="maxHeight" type="text" size="3" value="200" /><br />
+			Max Width &#8211; <input id="maxWidth" type="text" size="3" value="200" /><br />
+			<input id="resize" type="button" value="Resize" /></p>
+		</div>
+	</div>
+</body>
+</html>
